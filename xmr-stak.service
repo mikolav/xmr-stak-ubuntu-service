@@ -1,0 +1,8 @@
+[Unit]
+Description=xmr
+After=network.target
+[Service]
+ExecStart=/usr/local/src/xmr-stak/bin/xmr-stak -c /usr/local/src/xmr-stak/bin/config.txt
+User=root
+[Install]
+WantedBy=multi-user.target
